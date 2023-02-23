@@ -112,7 +112,7 @@ def classification_report_with_accuracy_score(y_true, y_pred):
     #    print(type(report_class)) #['precision']
     return accuracy_score(y_true, y_pred) # return accuracy score
 models = [('LogReg', LogisticRegression()),
-          ('SVM', SVC()),
+          #('SVM', SVC()),
           ('DecTree', DecisionTreeClassifier()),
           ('KNN', KNeighborsClassifier(n_neighbors=15)),
           ('LinDisc', LinearDiscriminantAnalysis()),
